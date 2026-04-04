@@ -5,6 +5,8 @@ Original Website Below, working on converting it to HTTPS
 [http://92435089.nhd.weebly.com/thesis.html](http://92435089.nhd.weebly.com/)
 
 Fixed Website (In Progress)
+
+
 Local Pages (In Progress)
 Local CSS Style (Not Started)
 Local Image Hosting (Not Started)
