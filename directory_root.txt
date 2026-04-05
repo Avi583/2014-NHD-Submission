@@ -1,0 +1,71 @@
+2014-NHD-Submission Project Files
+==================================
+
+/
+├── README.md
+├── Images/
+│   └── (all image files)
+├── 1980s.html
+├── Home.html
+├── Thesis.html
+├── bibliography.html
+├── conclusion.html
+├── data-and-graphs.html
+├── more.html
+├── opec-history.html
+├── opec-oil-embargo-1973.html
+├── political-cartoons.html
+├── process-paper.html
+├── reprecussions.html
+├── tensions-with-the-middle-east.html
+├── the-founding-of-opec.html
+└── timeline.html
+
+Total: 16 files + Images folder
+
+Full Paths (relative to repository root):
+-----------------------------------------
+README.md
+Images/
+1980s.html
+Home.html
+Thesis.html
+bibliography.html
+conclusion.html
+data-and-graphs.html
+more.html
+opec-history.html
+opec-oil-embargo-1973.html
+political-cartoons.html
+process-paper.html
+reprecussions.html
+tensions-with-the-middle-east.html
+the-founding-of-opec.html
+timeline.html
+
+GitHub Pages URLs:
+------------------
+https://avi583.github.io/2014-NHD-Submission/Home.html
+https://avi583.github.io/2014-NHD-Submission/Thesis.html
+https://avi583.github.io/2014-NHD-Submission/opec-history.html
+https://avi583.github.io/2014-NHD-Submission/the-founding-of-opec.html
+https://avi583.github.io/2014-NHD-Submission/opec-oil-embargo-1973.html
+https://avi583.github.io/2014-NHD-Submission/1980s.html
+https://avi583.github.io/2014-NHD-Submission/reprecussions.html
+https://avi583.github.io/2014-NHD-Submission/tensions-with-the-middle-east.html
+https://avi583.github.io/2014-NHD-Submission/conclusion.html
+https://avi583.github.io/2014-NHD-Submission/more.html
+https://avi583.github.io/2014-NHD-Submission/process-paper.html
+https://avi583.github.io/2014-NHD-Submission/data-and-graphs.html
+https://avi583.github.io/2014-NHD-Submission/political-cartoons.html
+https://avi583.github.io/2014-NHD-Submission/timeline.html
+https://avi583.github.io/2014-NHD-Submission/bibliography.html
+
+Image Path Change:
+------------------
+OLD: uploads/1/6/3/6/16363228/[filename]
+NEW: Images/[filename]
+
+Example:
+OLD: https://avi583.github.io/2014-NHD-Submission/uploads/1/6/3/6/16363228/107722754.jpg
+NEW: https://avi583.github.io/2014-NHD-Submission/Images/107722754.jpg
