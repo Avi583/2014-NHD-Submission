@@ -1,0 +1,82 @@
+EXTERNAL LINKS IN SCRIPTS - 2014-NHD-Submission
+================================================
+Updated Report - After Latest Cleanup
+
+================================================================================
+COMPLETED CHANGES
+================================================================================
+
+1. STATIC_BASE Variable - UPDATED (all 15 files)
+   Old: var STATIC_BASE = '//cdn1.editmysite.com/';
+   New: var STATIC_BASE = 'https://avi583.github.io/2014-NHD-Submission/';
+
+2. securePrefix Variable - REMOVED (all 15 files)
+   Removed: <script type="text/javascript"> _W = _W || {}; _W.securePrefix='92435089.nhd.weebly.com'; </script>
+   Reason: Only used for Weebly customer accounts, not needed for video player
+
+3. Cross-Domain Linker - REMOVED (all 15 files)
+   Removed: 'ec.editmysite.com' references
+   Reason: Weebly analytics tracking not needed for GitHub Pages
+
+4. Cache Busting Strings - REMOVED (all 15 files)
+   - main_style.css?1719325961 → main_style.css
+   - templateArtifacts.js?1719325961 → templateArtifacts.js  
+   - stl.js& → stl.js
+   - Image query strings in og:image meta tags
+
+================================================================================
+REMAINING EXTERNAL REFERENCES (Still Present)
+================================================================================
+
+1. WEEBLY VIDEO PLAYER (7 videos across 5 files)
+   -------------------------------------------------
+   These require migration to work properly:
+   
+   Files affected:
+   - 1980s.html (1 video)
+   - conclusion.html (1 video)
+   - opec-oil-embargo-1973.html (3 videos)
+   - the-founding-of-opec.html (1 video)
+   - thesis.html (1 video)
+   
+   URLs pattern:
+   - //www.weebly.com/weebly/apps/generateVideo.php?...
+   - //www.weebly.com/Images/[video_name].jpg
+   
+   Videos to migrate:
+   - opec_1990_iran_iraq_war_558.mp4
+   - opec_50_years_later_1_852.mp4
+   - opec_50_years_384.mp4
+   - opec_4_good_959.mp4
+   - opec_role_in_energy_markets_undimmed_after_50_years_1_970.mp4
+   - hot_topic_-_opec_1_245.mp4
+   - copy_of_20th_century_battlefields_down_flv_new_good_687.mp4
+
+2. GOOGLE reCAPTCHA (all 15 files)
+   --------------------------------
+   URL: //www.google.com/recaptcha/api.js
+   
+   Recommendation: Remove if no forms require CAPTCHA protection
+
+3. EXTERNAL CONTENT LINKS (Bibliography/Citations)
+   ------------------------------------------------
+   These are legitimate external references in content:
+   - commons.wikimedia.org (images)
+   - www.opec.org (official sources)
+   - www.time.com (citations)
+   - www.aljazeera.com (citations)
+   - www.eia.gov (citations)
+   - select.nytimes.com (citations)
+   - embed.verite.co (Timeline JS)
+
+================================================================================
+SUMMARY
+================================================================================
+
+✅ STATIC_BASE updated to GitHub Pages URL
+✅ securePrefix removed (not needed for videos)
+✅ Cross-domain linker removed
+✅ Cache busting strings removed
+
+⚠️ Weebly video player still references external Weebly servers
+⚠️ reCAPTCHA script still loaded (can be removed if no forms)
