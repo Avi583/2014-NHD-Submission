@@ -3,8 +3,7 @@
 
 /
 ├── README.md
-├── Images/
-│   └── (all image files)
+├── PATH_MAPPING.txt
 ├── 1980s.html
 ├── Home.html
 ├── Thesis.html
@@ -19,14 +18,59 @@
 ├── reprecussions.html
 ├── tensions-with-the-middle-east.html
 ├── the-founding-of-opec.html
-└── timeline.html
+├── timeline.html
+├── css/
+│   ├── sites.css
+│   ├── fancybox.css
+│   ├── slideshow.css
+│   └── mediaelementplayer.css
+├── fonts/
+│   ├── Open_Sans_font.css
+│   └── Crimson_Text_font.css
+├── js/
+│   ├── jquery-1.8.3.min.js
+│   ├── stl.js
+│   └── main.js
+└── Images/
+    └── og-image-placeholder-blank.png
 
-Total: 16 files + Images folder
+Total: 17 files + assets
+
+CDN2 to Local Path Mapping (Applied)
+=====================================
+//cdn2.editmysite.com/css/sites.css?buildTime=1775244635
+  → https://avi583.github.io/2014-NHD-Submission/css/sites.css
+
+//cdn2.editmysite.com/css/old/fancybox.css?1234
+  → https://avi583.github.io/2014-NHD-Submission/css/fancybox.css
+
+//cdn2.editmysite.com/css/old/slideshow/slideshow.css?buildtime=1775244635
+  → https://avi583.github.io/2014-NHD-Submission/css/slideshow.css
+
+//cdn2.editmysite.com/css/old/mediaelementplayer.css?buildtime=1775244635
+  → https://avi583.github.io/2014-NHD-Submission/css/mediaelementplayer.css
+
+//cdn2.editmysite.com/fonts/Open_Sans/font.css?2
+  → https://avi583.github.io/2014-NHD-Submission/fonts/Open_Sans_font.css
+
+//cdn2.editmysite.com/fonts/Crimson_Text/font.css?2
+  → https://avi583.github.io/2014-NHD-Submission/fonts/Crimson_Text_font.css
+
+https://cdn2.editmysite.com/js/jquery-1.8.3.min.js
+  → https://avi583.github.io/2014-NHD-Submission/js/jquery-1.8.3.min.js
+
+//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234
+  → https://avi583.github.io/2014-NHD-Submission/js/stl.js
+
+//cdn2.editmysite.com/js/site/main.js?buildTime=1775244635
+  → https://avi583.github.io/2014-NHD-Submission/js/main.js
+
+http://cdn2.editmysite.com/images/site/footer/og-image-placeholder-blank.png
+  → https://avi583.github.io/2014-NHD-Submission/Images/og-image-placeholder-blank.png
 
 Full Paths (relative to repository root):
 -----------------------------------------
 README.md
-Images/
 1980s.html
 Home.html
 Thesis.html
@@ -45,6 +89,7 @@ timeline.html
 
 GitHub Pages URLs:
 ------------------
+HTML Pages:
 https://avi583.github.io/2014-NHD-Submission/Home.html
 https://avi583.github.io/2014-NHD-Submission/Thesis.html
 https://avi583.github.io/2014-NHD-Submission/opec-history.html
@@ -61,11 +106,14 @@ https://avi583.github.io/2014-NHD-Submission/political-cartoons.html
 https://avi583.github.io/2014-NHD-Submission/timeline.html
 https://avi583.github.io/2014-NHD-Submission/bibliography.html
 
-Image Path Change:
-------------------
-OLD: uploads/1/6/3/6/16363228/[filename]
-NEW: Images/[filename]
-
-Example:
-OLD: https://avi583.github.io/2014-NHD-Submission/uploads/1/6/3/6/16363228/107722754.jpg
-NEW: https://avi583.github.io/2014-NHD-Submission/Images/107722754.jpg
+Assets:
+https://avi583.github.io/2014-NHD-Submission/css/sites.css
+https://avi583.github.io/2014-NHD-Submission/css/fancybox.css
+https://avi583.github.io/2014-NHD-Submission/css/slideshow.css
+https://avi583.github.io/2014-NHD-Submission/css/mediaelementplayer.css
+https://avi583.github.io/2014-NHD-Submission/fonts/Open_Sans_font.css
+https://avi583.github.io/2014-NHD-Submission/fonts/Crimson_Text_font.css
+https://avi583.github.io/2014-NHD-Submission/js/jquery-1.8.3.min.js
+https://avi583.github.io/2014-NHD-Submission/js/stl.js
+https://avi583.github.io/2014-NHD-Submission/js/main.js
+https://avi583.github.io/2014-NHD-Submission/Images/og-image-placeholder-blank.png
