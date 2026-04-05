@@ -39,38 +39,6 @@
 
 Total: 17 files + assets
 
-CDN2 to Local Path Mapping (Applied)
-=====================================
-//cdn2.editmysite.com/css/sites.css?buildTime=1775244635
-  → https://avi583.github.io/2014-NHD-Submission/css/sites.css
-
-//cdn2.editmysite.com/css/old/fancybox.css?1234
-  → https://avi583.github.io/2014-NHD-Submission/css/fancybox.css
-
-//cdn2.editmysite.com/css/old/slideshow/slideshow.css?buildtime=1775244635
-  → https://avi583.github.io/2014-NHD-Submission/css/slideshow.css
-
-//cdn2.editmysite.com/css/old/mediaelementplayer.css?buildtime=1775244635
-  → https://avi583.github.io/2014-NHD-Submission/css/mediaelementplayer.css
-
-//cdn2.editmysite.com/fonts/Open_Sans/font.css?2
-  → https://avi583.github.io/2014-NHD-Submission/fonts/Open_Sans_font.css
-
-//cdn2.editmysite.com/fonts/Crimson_Text/font.css?2
-  → https://avi583.github.io/2014-NHD-Submission/fonts/Crimson_Text_font.css
-
-https://cdn2.editmysite.com/js/jquery-1.8.3.min.js
-  → https://avi583.github.io/2014-NHD-Submission/js/jquery-1.8.3.min.js
-
-//cdn2.editmysite.com/js/lang/en/stl.js?buildTime=1234
-  → https://avi583.github.io/2014-NHD-Submission/js/stl.js
-
-//cdn2.editmysite.com/js/site/main.js?buildTime=1775244635
-  → https://avi583.github.io/2014-NHD-Submission/js/main.js
-
-http://cdn2.editmysite.com/images/site/footer/og-image-placeholder-blank.png
-  → https://avi583.github.io/2014-NHD-Submission/Images/og-image-placeholder-blank.png
-
 Full Paths (relative to repository root):
 -----------------------------------------
 README.md
