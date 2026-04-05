@@ -31,6 +31,9 @@
 │   ├── jquery-1.8.3.min.js
 │   ├── stl.js
 │   └── main.js
+│   └── jquery-2.1.4.min.js
+│   └── main-customer-accounts-site.js
+│   └── snowday262.js
 └── Images/
     └── og-image-placeholder-blank.png
 
