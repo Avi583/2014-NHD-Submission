@@ -1,1 +1,1 @@
-Placeholder
+Fancybox_Placeholder
