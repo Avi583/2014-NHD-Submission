@@ -363,16 +363,74 @@ _W.Slideshow.initHeaderSlideshow({"dots":true,"dotPosition":"right","arrows":tru
 <h2 class="wsite-content-title" style="text-align:left;">Wars</h2>
 <div class="paragraph" style="text-align:left;display:block;"><font size="4">Ever since OPEC was formed, America had a very negative view on them. This is because America could no longer negotiate cheaper oil prices with&nbsp;individual&nbsp;countries, instead USA had to approach a whole bunch of countries and beg for cheaper oil. American ties&nbsp;</font><br /><font size="4">with OPEC worsened when the 1973 oil embargo&nbsp;occurred. Another problem was when Iran stopped selling oil to USA.The result of these tensions was the Iran Iraq War during 1980-1988; the Gulf War during 1990-1991 when Iraq&nbsp;invaded&nbsp;Kuwait; and 2003-2011 Iraq War, when America toppled Saddam Hussein's Government.&nbsp;</font><br /></div>
 
-<div><div style="height:20px;overflow:hidden"></div>
-<div id='348466532210968036-slideshow'></div>
-<script type='text/javascript'>
-(function(jQuery) {
-function init() { window.wSlideshow && window.wSlideshow.render({elementID:"348466532210968036",nav:"thumbnails",navLocation:"right",captionLocation:"bottom",transition:"fade",autoplay:"0",speed:"5",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"1\/6\/3\/6\/16363228\/1886589.jpg","width":"333","height":"187"},{"url":"1\/6\/3\/6\/16363228\/5651024.jpg","width":"320","height":"250"},{"url":"1\/6\/3\/6\/16363228\/9198811.jpg","width":"333","height":"213"},{"url":"1\/6\/3\/6\/16363228\/2359529.jpg","width":"250","height":"250"},{"url":"1\/6\/3\/6\/16363228\/2833631.jpg","width":"333","height":"249"},{"url":"1\/6\/3\/6\/16363228\/8634944.jpg","width":333,"height":249,"fullHeight":360,"fullWidth":480}]}) }
-jQuery(document).ready(init);
-})(window.jQuery)
+<div>
+<style>
+.wss-container{position:relative;width:100%;max-width:700px;margin:0 auto;user-select:none}
+.wss-main{position:relative;overflow:hidden;background:#000;min-height:220px}
+.wss-slide{display:none;text-align:center;position:relative}
+.wss-slide.active{display:block}
+.wss-slide img{max-width:100%;max-height:420px;object-fit:contain;display:block;margin:0 auto}
+.wss-caption{background:rgba(0,0,0,.65);color:#fff;font-size:13px;padding:6px 10px;text-align:center}
+.wss-controls{display:flex;align-items:center;justify-content:space-between;background:#222;padding:4px 8px}
+.wss-btn{background:none;border:none;color:#fff;font-size:22px;cursor:pointer;padding:2px 8px;line-height:1}
+.wss-btn:hover{color:#ffcc00}
+.wss-counter{color:#ccc;font-size:13px}
+.wss-thumbs-left{display:flex;flex-direction:column;gap:4px;padding:6px;background:#f5f5f5;max-height:420px;overflow-y:auto;flex-shrink:0}
+.wss-layout{display:flex;gap:0}
+.wss-thumb{width:60px;height:45px;object-fit:cover;cursor:pointer;border:2px solid transparent;opacity:.7;transition:opacity .2s,border-color .2s}
+.wss-thumb.active,.wss-thumb:hover{opacity:1;border-color:#0077cc}
+</style>
+<div class="wss-container">
+  <div class="wss-layout">
+    <div class="wss-thumbs-left">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/1886589.jpg" class="wss-thumb active" data-index="0" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/5651024.jpg" class="wss-thumb" data-index="1" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/9198811.jpg" class="wss-thumb" data-index="2" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/2359529.jpg" class="wss-thumb" data-index="3" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/2833631.jpg" class="wss-thumb" data-index="4" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/8634944.jpg" class="wss-thumb" data-index="5" alt="">
+    </div>
+    <div style="flex:1;min-width:0">
+      <div class="wss-main">
+<div class="wss-slide active" data-index="0"><img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/1886589_orig.jpg" alt=""></div>
+<div class="wss-slide" data-index="1"><img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/5651024_orig.jpg" alt=""></div>
+<div class="wss-slide" data-index="2"><img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/9198811_orig.jpg" alt=""></div>
+<div class="wss-slide" data-index="3"><img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/2359529_orig.jpg" alt=""></div>
+<div class="wss-slide" data-index="4"><img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/2833631_orig.jpg" alt=""></div>
+<div class="wss-slide" data-index="5"><img src="https://avi583.github.io/2014-NHD-Submission/Images/tensions_slide_img/8634944_orig.jpg" alt=""></div>
+      </div>
+      <div class="wss-controls">
+        <button class="wss-btn wss-prev">&#8249;</button>
+        <span class="wss-counter">1 / 6</span>
+        <button class="wss-btn wss-next">&#8250;</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var container = document.querySelector('.wss-container');
+  if (!container) return;
+  var slides = container.querySelectorAll('.wss-slide');
+  var thumbs = container.querySelectorAll('.wss-thumb');
+  var counter = container.querySelector('.wss-counter');
+  var cur = 0, total = slides.length, timer;
+  function show(n) {
+    slides[cur].classList.remove('active');
+    thumbs[cur].classList.remove('active');
+    cur = (n + total) % total;
+    slides[cur].classList.add('active');
+    thumbs[cur].classList.add('active');
+    if (counter) counter.textContent = (cur+1) + ' / ' + total;
+  }
+  container.querySelector('.wss-prev').addEventListener('click', function(){ show(cur-1); resetTimer(); });
+  container.querySelector('.wss-next').addEventListener('click', function(){ show(cur+1); resetTimer(); });
+  thumbs.forEach(function(t){ t.addEventListener('click', function(){ show(+t.dataset.index); resetTimer(); }); });
+  function resetTimer(){ clearInterval(timer); timer = setInterval(function(){ show(cur+1); }, 9000); }
+  show(0); resetTimer();
+})();
 </script>
-
-<div style="height:20px;overflow:hidden"></div></div>
+</div>
 
 <div><div id="302964414620916707" align="left" style="width: 100%; overflow-y: hidden;" class="wcustomhtml"><font size="2"> <ul>
 <a href="#ptop"> &nbsp Back to top</a>
