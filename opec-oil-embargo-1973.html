@@ -436,16 +436,70 @@ _W.Slideshow.initHeaderSlideshow({"dots":true,"dotPosition":"right","arrows":tru
 	</table>
 </div></div></div>
 
-<div><div style="height:20px;overflow:hidden"></div>
-<div id='636962577868287788-slideshow'></div>
-<script type='text/javascript'>
-(function(jQuery) {
-function init() { window.wSlideshow && window.wSlideshow.render({elementID:"636962577868287788",nav:"thumbnails",navLocation:"left",captionLocation:"bottom",transition:"fade",autoplay:"1",speed:"6",aspectRatio:"auto",showControls:"true",randomStart:"false",images:[{"url":"1/6/3/6/16363228/4145985.jpg","width":"275","height":"190","caption":"Egyptian tanks crossing the Sinai Peninsula."},{"url":"1/6/3/6/16363228/7999679.jpg","width":"166","height":"250","caption":"This map shows territories after Yom-Kippur war. Blue/Green was held by the Israeli army and red was held by the Egyptian army."},{"url":"1/6/3/6/16363228/1694787.jpg","width":"221","height":"250","caption":"This map shows the war fronts on the Yom-Kippur war."},{"url":"1/6/3/6/16363228/7101118.jpg","width":"333","height":"201","caption":"Sinai Peninsula during 1967 6 Day War and during the 1973 Yom-Kippur War"}]}) }
-jQuery(document).ready(init);
-})(window.jQuery)
+<div>
+<style>
+.wss-container{position:relative;width:100%;max-width:700px;margin:0 auto;user-select:none}
+.wss-main{position:relative;overflow:hidden;background:#000;min-height:220px}
+.wss-slide{display:none;text-align:center;position:relative}
+.wss-slide.active{display:block}
+.wss-slide img{max-width:100%;max-height:420px;object-fit:contain;display:block;margin:0 auto}
+.wss-caption{background:rgba(0,0,0,.65);color:#fff;font-size:13px;padding:6px 10px;text-align:center}
+.wss-controls{display:flex;align-items:center;justify-content:space-between;background:#222;padding:4px 8px}
+.wss-btn{background:none;border:none;color:#fff;font-size:22px;cursor:pointer;padding:2px 8px;line-height:1}
+.wss-btn:hover{color:#ffcc00}
+.wss-counter{color:#ccc;font-size:13px}
+.wss-thumbs-left{display:flex;flex-direction:column;gap:4px;padding:6px;background:#f5f5f5;max-height:420px;overflow-y:auto;flex-shrink:0}
+.wss-layout{display:flex;gap:0}
+.wss-thumb{width:60px;height:45px;object-fit:cover;cursor:pointer;border:2px solid transparent;opacity:.7;transition:opacity .2s,border-color .2s}
+.wss-thumb.active,.wss-thumb:hover{opacity:1;border-color:#0077cc}
+</style>
+<div class="wss-container">
+  <div class="wss-layout">
+    <div class="wss-thumbs-left">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/4145985.jpg" class="wss-thumb active" data-index="0" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/7999679.jpg" class="wss-thumb" data-index="1" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/1694787.jpg" class="wss-thumb" data-index="2" alt="">
+<img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/7101118.jpg" class="wss-thumb" data-index="3" alt="">
+    </div>
+    <div style="flex:1;min-width:0">
+      <div class="wss-main">
+<div class="wss-slide active" data-index="0"><img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/4145985_orig.jpg" alt=""><div class="wss-caption">Egyptian tanks crossing the Sinai Peninsula.</div></div>
+<div class="wss-slide" data-index="1"><img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/7999679_orig.jpg" alt=""><div class="wss-caption">This map shows territories after Yom-Kippur war. Blue/Green was held by the Israeli army and red was held by the Egyptian army.</div></div>
+<div class="wss-slide" data-index="2"><img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/1694787_orig.jpg" alt=""><div class="wss-caption">This map shows the war fronts on the Yom-Kippur war.</div></div>
+<div class="wss-slide" data-index="3"><img src="https://avi583.github.io/2014-NHD-Submission/Images/1973_slide_img/7101118_orig.jpg" alt=""><div class="wss-caption">Sinai Peninsula during 1967 6 Day War and during the 1973 Yom-Kippur War.</div></div>
+      </div>
+      <div class="wss-controls">
+        <button class="wss-btn wss-prev">&#8249;</button>
+        <span class="wss-counter">1 / 4</span>
+        <button class="wss-btn wss-next">&#8250;</button>
+      </div>
+    </div>
+  </div>
+</div>
+<script>
+(function(){
+  var container = document.querySelector('.wss-container');
+  if (!container) return;
+  var slides = container.querySelectorAll('.wss-slide');
+  var thumbs = container.querySelectorAll('.wss-thumb');
+  var counter = container.querySelector('.wss-counter');
+  var cur = 0, total = slides.length, timer;
+  function show(n) {
+    slides[cur].classList.remove('active');
+    thumbs[cur].classList.remove('active');
+    cur = (n + total) % total;
+    slides[cur].classList.add('active');
+    thumbs[cur].classList.add('active');
+    if (counter) counter.textContent = (cur+1) + ' / ' + total;
+  }
+  container.querySelector('.wss-prev').addEventListener('click', function(){ show(cur-1); resetTimer(); });
+  container.querySelector('.wss-next').addEventListener('click', function(){ show(cur+1); resetTimer(); });
+  thumbs.forEach(function(t){ t.addEventListener('click', function(){ show(+t.dataset.index); resetTimer(); }); });
+  function resetTimer(){ clearInterval(timer); timer = setInterval(function(){ show(cur+1); }, 9000); }
+  show(0); resetTimer();
+})();
 </script>
-
-<div style="height:20px;overflow:hidden"></div></div>
+</div>
 
 <blockquote style="text-align:left;"><strong style=""><font size="3">&ldquo;And by the way, a piece of news, Israel is the one country in which everyone is pro-American, opposition and coalition alike. And I represent the entire people of Israel who say, 'Thank you, America.'' And we're friends of America, and we're the only reliable allies of America in the Middle East.&rdquo;</font></strong><br /><br /><br /><br /><strong style=""><font size="3">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp; &nbsp;&nbsp; &nbsp;&nbsp; -- Benjamin Netanyahu</font></strong></blockquote>
 
