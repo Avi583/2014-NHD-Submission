@@ -7,8 +7,9 @@ Original Website Below, working on converting it to HTTPS
 Fixed Website (In Progress)
 
 
-Local Pages (In Progress)
+Local Pages (Completed)
 Local CSS Style (Not Started)
-Local Image Hosting (Not Started)
+Local Image Hosting (Completed)
+Local Video Hosting (Completed)
 
-https://avi583.github.io/2014-NHD-Submission/Home.html
+[https://avi583.github.io/2014-NHD-Submission/Home.html](https://avi583.github.io/2014-NHD-Submission/Home.html)
