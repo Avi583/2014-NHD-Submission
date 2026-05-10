@@ -4,12 +4,12 @@
 Original Website Below, working on converting it to HTTPS
 [http://92435089.nhd.weebly.com/thesis.html](http://92435089.nhd.weebly.com/)
 
-Fixed Website (In Progress)
+Fixed Website (Complete)
 
-
-Local Pages (Completed)
-Local CSS Style (Not Started)
-Local Image Hosting (Completed)
-Local Video Hosting (Completed)
+- Weebly Specific JS attributed replaced with Generic JS
+- Slideshow logic restructured
+- Video logic restructured
+- Audio logic restructured
+- Images, Audio Files and Videos moved from Weebly hosting to Github hosting
 
 [https://avi583.github.io/2014-NHD-Submission/Home.html](https://avi583.github.io/2014-NHD-Submission/Home.html)
