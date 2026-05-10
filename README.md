@@ -11,5 +11,6 @@ Fixed Website (Complete)
 - Video logic restructured
 - Audio logic restructured
 - Images, Audio Files and Videos moved from Weebly hosting to Github hosting
+- Fonts and Themes transitioned to local
 
 [https://avi583.github.io/2014-NHD-Submission/Home.html](https://avi583.github.io/2014-NHD-Submission/Home.html)
